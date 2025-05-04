@@ -1,0 +1,107 @@
+/* List layout for progress board */
+.progress-board-list {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.assignment-group-list {
+  margin-bottom: 2.5rem;
+}
+
+.group-title {
+  color: #333;
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  font-size: 1.3rem;
+}
+
+.assignments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.assignment-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 8px;
+  padding: 1.1rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.2s;
+}
+
+.assignment-row:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.13);
+}
+
+.assignment-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 350px;
+  gap: 0;
+}
+
+.assignment-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  min-width: 220px;
+  max-width: 320px;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.assignment-stats {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 0.97rem;
+  color: #555;
+  margin-top: 0.3rem;
+  text-align: left;
+}
+
+.stat {
+  font-weight: 400;
+}
+
+.progress-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-width: 220px;
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.progress-bar-horizontal {
+  flex: 1;
+  height: 14px;
+  background-color: #eee;
+  border-radius: 7px;
+  overflow: hidden;
+  min-width: 120px;
+  max-width: 300px;
+}
+
+.progress-bar-horizontal-fill {
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 0.3s ease;
+  border-radius: 7px 0 0 7px;
+}
+
+.milestone-badge-list {
+  margin-left: 0.7rem;
+  padding: 0.2rem 0.7rem;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 4px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  white-space: nowrap;
+} 

@@ -19,4 +19,25 @@ export interface Timestamp {
 export interface VideoAssignment {
   video: VideoData;
   assignment: Assignment;
+}
+
+export interface VideoProgress {
+  videoId: string;
+  timestamps: Timestamp[];
+  lastWatched: number; // timestamp
+  totalTimeAnalyzed: number; // in seconds
+}
+
+export interface AssignmentProgress {
+  assignmentId: string;
+  videosAnalyzed: number;
+  totalVideos: number;
+  lastUpdated: number; // timestamp
+  milestone: '10' | '25' | '50' | '75' | '100' | null;
+}
+
+export interface UserProgress {
+  assignments: Record<string, AssignmentProgress>;
+  videos: Record<string, VideoProgress>;
+  lastUpdated: number;
 } 
