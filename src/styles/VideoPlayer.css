@@ -1,0 +1,54 @@
+.video-player-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-wrapper {
+  flex: 1;
+  min-width: 854px;
+}
+
+.behavior-controls {
+  flex: 0 0 300px;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-info {
+  margin-bottom: 2rem;
+}
+
+.assignment-info h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.assignment-info p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.behavior-button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.behavior-button:hover {
+  background-color: #45a049;
+}
+
+.behavior-button:active {
+  background-color: #3d8b40;
+} 
